@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family-Poppins:200,300,400,500,600,700,800,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        section{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+        section .imgbx{
+            position: relative;
+            width: 50%;
+            height: 100%;
+        }
+        section .imgbx:before{
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: linear-gradient(225deg,#e91e63,#03a9f4); */
+            z-index: 1;
+            mix-blend-mode: screen;
+        }
+        section .imgbx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        section .contentbx{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+        }
+        section .contentbx .formbx{
+            width: 50%;
+        }
+        section .contentbx .formbx h2{
+            color: #607d8b;
+            font-weight: 600;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #ff4584;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+        section .contentbx .formbx .inputbx{
+            margin-bottom: 20px;
+        }
+        section .contentbx .formbx .inputbx span{
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: inline-block;
+            color: #607db8;
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        section .contentbx .formbx .inputbx input{
+            width: 100%;
+            padding: 10px 20px;
+            outline: none;
+            font-weight: 400;
+            border: 1px solid #607d8b;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #607d8b;
+            background: transparent;
+            border-radius: 30px;
+        }
+        section .contentbx .formbx .inputbx input[type="submit"]{
+            background: #ff4584;
+            color: #fff;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+
+        }
+        section .contentbx .formbx .inputbx input[type="submit"]:hover{
+            background: #f53677;
+        }
+        section .contentbx .formbx .remember{
+            margin-bottom: 10px;
+            color: #607d8b;
+            font-weight: 400;
+            font-size: 14px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="imgbx">
+            <img src="https://images.unsplash.com/photo-1579294087307-657ee969cba2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cGxlJTIwY29mZmVlfGVufDB8fDB8fHww&w=1000&q=80">
+        </div>
+        <div class="contentbx">
+            <div class="formbx">
+                <h2>Register</h2>
+                <form action="/register" method="post">
+                    <div class="inputbx">
+                        <span>Username</span>
+                        <input type="text" name="username">
+                    </div>
+                    <div class="inputbx">
+                        <span>Password</span>
+                        <input type="password" name="password">
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox" name="">Remember me</label>
+                    </div>
+                    <div class="inputbx">
+                        <input type="submit"  name="">
+                    </div>
+                    <div class="inputbx">
+                        <p>Do you have an account? <a href="./login">Sign in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

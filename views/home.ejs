@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title> 
+    <style>
+        
+    
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,rgb(52, 182, 211),rgb(151, 161, 118),rgb(134, 45, 116));
+}
+
+form{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(171, 67, 67, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(6, 176, 206, 0.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(24, 50, 217, 0.3);
+    border-top: 1px solid rgba(154, 211, 140, 0.3);
+}
+
+
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(212, 10, 10, 0.2);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: .7;
+}
+
+
+button{
+    width: 50%;
+    margin: 3% auto;
+    color: white;
+    font-size: 15px;
+    opacity: .7;
+    background: rgba(255,255,255,0.06);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+    box-shadow: 3px 3px 5px rgba(31,38,135,.37);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+}
+a{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    opacity: .7;
+}
+       
+    </style>
+</head>
+<body><form>
+    <h1>Welcome to our page</h1>
+    
+    <button><a href="/login">Login</a></button><br><br>
+    <button><a href="/register">Register</a></button>
+</form>
+</body>
+</html>

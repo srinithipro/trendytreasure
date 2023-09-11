@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo page</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+     rel='stylesheet'>
+     <!-- footer font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <!-- nav -->
+        <div class="nav container">
+            <!-- logo -->
+            <ul>
+            <a href="#" class="logo">Trendy Treasures</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./index.html" class="logo">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#foot" class="logo">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#foot" class="logo">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/views/home.html" class="logo">USER</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!-- Cart-icon -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                    
+                </div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>  
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- buy button -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- close cart -->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+      </ul>
+    </header>
+    <!-- products -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- shop content -->
+        <div class="shop-content">
+         
+            <!-- box 1 -->
+            <div class="product-box">
+                <!-- stripe need images   on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://img101.urbanic.com/v1/goods-pic/369c5c8ba2b94eb8aac669bbec409a23UR_w1440_q90.webp" 
+                  alt="" 
+                  class="product-img">
+                <h2 class="product-title">Shimmery Ombre Printed Cami Dress</h2>
+                <span class="price">$100</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+             <!-- box 2 -->
+             <div class="product-box">
+                <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://img101.urbanic.com/v1/goods-pic/22de5e19f04649879a4eb7a14e83e48bUR_w1440_q90.webp"
+                  alt="" 
+                  class="product-img">
+                <h2 class="product-title">Textured Mermaid Tank Dress</h2>
+                <span class="price">$80</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div> 
+            <!-- box 3 -->
+            <div class="product-box">
+                <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://img101.urbanic.com/v1/goods-pic/8cbae0983bb045a792879be1d2fbe6eaUR_w1440_q90.webp"
+                alt="" 
+                  class="product-img">
+                <h2 class="product-title">Long Gathered Sheer Cami Dress</h2>
+                <span class="price">$150</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div> 
+            <!-- box 4 -->
+            <div class="product-box">
+                <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://img101.urbanic.com/v1/goods-pic/fbb727746aad46f28528fe719ef03557UR_w750_q90.webp" 
+                  alt="" 
+                  class="product-img">
+                <h2 class="product-title"> Midi Mesh Dress With Asymmetric Ruffles</h2>
+                <span class="price">$70</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div> 
+            <!-- box 5 -->
+            <div class="product-box">
+                <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://www.rareism.com/cdn/shop/products/IMG_0163_1_765x.jpg?v=1679393315"
+                  alt="" 
+                  class="product-img">
+                <h2 class="product-title">Lovia Beigh Top</h2>
+                <span class="price">$30</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+             <!-- box 6 -->
+            <div class="product-box">
+                <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://m.media-amazon.com/images/I/41A5771w25L._AC_UY1100_.jpg" 
+                  alt="" 
+                  class="product-img">
+                <h2 class="product-title">A-Line Knee-Length Dress</h2>
+                <span class="price">$60</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div> 
+            <!-- box 7 -->
+            <div class="product-box">
+                <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://5.imimg.com/data5/SELLER/Default/2021/11/CN/NA/RQ/138583310/stylish-western-wear-multi-stripe-girl-crop-top.jpg" 
+                  alt="" 
+                  class="product-img">
+                <h2 class="product-title">Floral Print Women's Gown</h2>
+                <span class="price">$90</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div> 
+            <!-- box 8 -->
+            <div class="product-box">
+                <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoDqolIRu0ilU5uSg7gMF_YB5mDSl2yw20UA&usqp=CAU" 
+                  alt="" 
+                  class="product-img">
+                <h2 class="product-title">Stylish Western Wear Multi Stripe Girl Crop Top</h2>
+                <span class="price">$80</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- box 9 -->
+            <div class="product-box">
+              <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+              <img 
+                src="https://rukminim1.flixcart.com/image/450/500/xif0q/shoe/r/k/e/3-lp5951-3-layasa-multicolor-original-imaghzbswzhdbcwg.jpeg?q=90&crop=false"
+                alt="" 
+                class="product-img">
+              <h2 class="product-title">Stylish Casual Sports Shoe Sneakers Casuals For Women</h2>
+              <span class="price">$300</span>
+              <i class='bx bx-shopping-bag add-cart' ></i>
+          </div>
+           <!-- box 10 -->
+          <div class="product-box">
+              <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+              <img 
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/t/c/t/ft-501-fashion-tails-black-original-imafwyfy9sznkdxq-bb.jpeg?q=70" 
+                alt="" 
+                class="product-img">
+              <h2 class="product-title">Women Black Heels Sandal</h2>
+              <span class="price">$260</span>
+              <i class='bx bx-shopping-bag add-cart' ></i>
+          </div> 
+          <!-- box 11 -->
+          <div class="product-box">
+              <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+              <img 
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/1/q/a/5-gd602-38-picktoes-pink-original-imag4j7zjhf6yztw-bb.jpeg?q=70" 
+                alt="" 
+                class="product-img">
+              <h2 class="product-title">Pink Heels Sandal</h2>
+              <span class="price">$350</span>
+              <i class='bx bx-shopping-bag add-cart' ></i>
+          </div> 
+          <!-- box 12 -->
+          <div class="product-box">
+              <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+              <img 
+                src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/g/f/c/4-40-167-37-metro-45-blue-original-imagrdnz2rnh7haa.jpeg?q=70" 
+                alt="" 
+                class="product-img">
+              <h2 class="product-title">Blue Heels Sandal</h2>
+              <span class="price">$200</span>
+              <i class='bx bx-shopping-bag add-cart' ></i>
+          </div>
+          <!-- box 13 -->
+          <div class="product-box">
+            <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+            <img 
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX3IPDfS1Ec4apSBB5ZMHOpyR91_3YfDu-Rw&usqp=CAU" 
+              alt="" 
+              class="product-img">
+            <h2 class="product-title"> "LIKE STYLE" Handbag  </h2>
+            <span class="price">$150</span>
+            <i class='bx bx-shopping-bag add-cart' ></i>
+        </div>
+         <!-- box 14 -->
+         <div class="product-box">
+          <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8tpLtUOyHqAte8Vut68wQcRE5_ZJji_huw&usqp=CAU" 
+            alt="" 
+            class="product-img">
+          <h2 class="product-title">clementine Women's Satchel Bag</h2>
+          <span class="price">$100</span>
+          <i class='bx bx-shopping-bag add-cart' ></i>
+      </div>
+      <!-- box 15 -->
+      <div class="product-box">
+        <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+        <img 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ZiJc8vofO-ntGg0fzY0jiHKbXRjQPJIXNQ&usqp=CAU" 
+          alt="" 
+          class="product-img">
+        <h2 class="product-title">Long Lasting And Highly Comfortable Ladies Handbag </h2>
+        <span class="price">$110</span>
+        <i class='bx bx-shopping-bag add-cart' ></i>
+    </div>
+    <!-- box 16 -->
+    <div class="product-box">
+      <!-- stripe need images are on online on local server it will not show in stripe checkout page we have to upload online -->
+      <img 
+        src="https://m.media-amazon.com/images/I/81nwzKeL5JL._AC_UY1000_.jpg" 
+        alt="" 
+        class="product-img">
+      <h2 class="product-title">Panelled Hobo Bag with Hearts Hangtag</h2>
+      <span class="price">$100</span>
+      <i class='bx bx-shopping-bag add-cart' ></i>
+  </div>
+          
+
+            
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer id="foot">
+  <div class="container">
+    <div class="sec aboutus">
+      <h2>About Us</h2>
+      <p>We can provide customer support though online chat, email or phone to assist with inquiries, returns or issues. </p>
+      <ul class="sci">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <div class="sec quicklinks">
+      <h2>Support</h2>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="sec quicklinks">
+      <h2>Shop</h2>
+      <ul>
+        <li><a href="#">Western Tops</a></li>
+        <li><a href="#">kurtis</a></li>
+        <li><a href="#">sandals</a></li>
+        <li><a href="#">Handbags</a></li>
+      </ul>
+    </div>
+    <div class="sec contact">
+      <h2>Contact Us
+        <ul class="info">
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            <p>
+              <a href="tel:+12345678900">+1 234 567 8900</a>
+            </p>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></i></span>
+            <p>
+              <a href="mailto:knowmoretrendytreasure@emailtomee">knowmoretrendytreasure@emailtomee</a>
+            </p>
+          </li>
+        </ul>
+      </h2>
+    </div>
+  </div>
+</footer>
+<div class="copyrightText">
+  <p>Copyright 2023 online shopping.All Rights Reserved</p>
+</div>
+
+    <!-- link to js -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js" ></script>
+</body>
+</html>
